@@ -1,0 +1,33 @@
+<!-- 5. Design a Feedback Form
+Write HTML code for a feedback form with input fields for name, email, rating (1–5 using radio
+buttons), and a comment box. Add a submit button. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+
+    <form>
+    <input type="text" placeholder="Enter your name"><br><br>
+
+    <input type="email" placeholder="Enter your email"><br><br>
+
+    Rating:<br>
+    <input type="radio" name="rating" value="1"> 1
+    <input type="radio" name="rating" value="2"> 2
+    <input type="radio" name="rating" value="3"> 3
+    <input type="radio" name="rating" value="4"> 4
+    <input type="radio" name="rating" value="5"> 5<br><br>
+
+    <textarea id="comment" name="comment" rows="4" cols="30" placeholder="Enter your comments"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+    
+</body>
+</html>
