@@ -1,0 +1,33 @@
+<!-- 10. Form Validation Practice
+Create an HTML form for user registration with fields: Username, Password, Email, and Phone
+Number. Use appropriate input types and include required and pattern attributes for validation. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration Form</title>
+</head>
+<body>
+    <h2>User Registration</h2>
+    <form action="#" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required pattern="[A-Za-z0-9_]{5,15}" >
+        <br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required 
+               pattern=".{6,}" >
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required 
+               pattern="[0-9]{10}" >
+        <br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
