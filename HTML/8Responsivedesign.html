@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thoughts for the Day</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: aliceblue;
+    }
+
+    header {
+      background-color: #85b5e8;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding: 40px 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      flex: 1;
+      min-width: 250px;
+      max-width: 400px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-5px);
+    }
+
+    blockquote {
+      font-style: italic;
+      color: #555;
+    }
+
+    p.author {
+      text-align: right;
+      color: #333;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header {
+        font-size: 1.2em;
+        padding: 40px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Thoughts for the Day</h1>
+    <p>Be Inspired. Stay Motivated.</p>
+  </header>
+
+  <div class="content">
+    <div class="box">
+      <blockquote>“Success is not final, failure is not fatal: It is the courage to continue that counts.”</blockquote>
+      <p class="author">— Winston Churchill</p>
+    </div>
+
+    <div class="box">
+      <blockquote>“The best way to get started is to quit talking and begin doing.”</blockquote>
+      <p class="author">— Walt Disney</p>
+    </div>
+
+    <div class="box">
+      <blockquote>“Don't watch the clock; do what it does. Keep going.”</blockquote>
+      <p class="author">— Sam Levenson</p>
+    </div>
+
+    <div class="box">
+      <blockquote>“Believe you can and you're halfway there.”</blockquote>
+      <p class="author">— Theodore Roosevelt</p>
+    </div>
+
+    <div class="box">
+      <blockquote>“Start where you are. Use what you have. Do what you can.”</blockquote>
+      <p class="author">— Arthur Ashe</p>
+    </div>
+  </div>
+
+</body>
+</html>
