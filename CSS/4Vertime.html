@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Career Timeline</title>
+  <style>
+    body {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+      color: #000000;
+    }
+
+    .timeline {
+      position: relative;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 0;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      width: 6px;
+      background-color: #004d40;
+      transform: translateX(-50%);
+    }
+
+    .event {
+      position: relative;
+      width: 40%;
+      padding: 20px;
+      background: #ffffff;
+      border-left: 6px solid #004d40;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 5px;
+      transition: transform 0.3s ease, background-color 0.3s;
+    }
+
+    .event:hover {
+      background: #004d40;
+      color: #ffffff;
+      transform: translateY(-5px);
+    }
+
+    .event.left {
+      left: 0;
+    }
+
+    
+
+    .event.right {
+      left: 60%;
+    }
+
+    
+
+    .date {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #00796b;
+    }
+
+    .event:hover .date {
+      color: #b2dfdb;
+    }
+
+    @media (max-width: 768px) {
+      .timeline::before {
+        left: 8px;
+      }
+
+      .event {
+        width: 90%;
+        left: 0 !important;
+        margin-left: 30px;
+        padding-left: 25px;
+        border-left: 4px solid #004d40;
+      }
+
+      .event::before {
+        left: -25px !important;
+        right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CAREER TIMELINE</h1>
+
+  <div class="timeline">
+    <div class="event left">
+      <div class="date">2018</div>
+      <p>Graduated with a degree in Computer Science.</p>
+    </div>
+
+    <div class="event right">
+      <div class="date">2019</div>
+      <p>Started working at ABC Corp as Junior Developer.</p>
+    </div>
+
+    <div class="event left">
+      <div class="date">2021</div>
+      <p>Promoted to Software Engineer and led a small team.</p>
+    </div>
+
+    <div class="event right">
+      <div class="date">2023</div>
+      <p>Specialized in Cloud and DevOps technologies.</p>
+    </div>
+
+    <div class="event left">
+      <div class="date">2024</div>
+      <p>Launched a startup focused on network automation.</p>
+    </div>
+  </div>
+
+</body>
+</html>
