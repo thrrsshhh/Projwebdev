@@ -1,0 +1,21 @@
+DOM:
+Document object model: DOM javascript is a programming interface for html and xml documents.
+it represents the structure of a webpage as a tree of objects.
+
+Dynamic manipulation:
+part 1: Accessing the elements: using methods like  
+1. getElementById()  
+2. querySelector()  
+3. getElementsByClassName()  
+4. getElementsByTagName()  
+5. querySelectorAll()
+
+part 2: Change of content  
+modifying the properties like text content or inner html
+
+part3: Modify attributes: setting or getting attributes like src, href, getElementsByClassName
+
+part4: add and remove elements: creating new elements using createElement()  
+appending/removing them using appendChild()/removeChild()
+
+part5: Handle events: Attaching the event listeners to elements to respond to user interactions. (clicks and hover)
